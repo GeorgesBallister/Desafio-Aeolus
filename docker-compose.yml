@@ -6,6 +6,8 @@ services:
       - "27017:27017"
     volumes:
       - mongo-data:/data/db
+     # Inicia o MongoDB com replicação para permitir multidocumento
+    command: ["--replSet", "rs0"]
 
 volumes:
   mongo-data:

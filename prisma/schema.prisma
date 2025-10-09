@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Fonte de Dados
+datasource db {
+  provider = "mongodb"
+
+  // Pegando a informação do URL pelo arquivo .env
+  url      = env("DATABASE_URL")
+}
+
+// Schema - Camera
+model Camera {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  name         String
+  cameraID     String   @unique
+  zona         String
+  enderecoRTSP String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
