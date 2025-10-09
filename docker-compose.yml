@@ -1,4 +1,5 @@
 services:
+  # Banco de Dados MongoDB
   mongo:
     image: mongo:noble
     container_name: aeolus_mongo_server
@@ -9,5 +10,54 @@ services:
      # Inicia o MongoDB com replicação para permitir multidocumento
     command: ["--replSet", "rs0"]
 
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest
+    container_name: aeolus_clickhouse_server
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+    environment:
+      - CLICKHOUSE_USER=default
+      - CLICKHOUSE_PASSWORD=admin
+    volumes:
+      - clickhouse-data:/var/lib/clickhouse
+
+  zookeeper:
+    image: zookeeper:latest
+    container_name: aeolus_zookeeper_server
+    ports:
+      - "2181:2181"
+    
+  kafka:
+    image: apache/kafka:latest
+    container_name: aeolus_kafka_server
+    environment:
+      - KAFKA_BROKER_ID=1
+      - KAFKA_ZOOKEEPER_CONNECT=aeolus_zookeeper_server:2181
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://aeolus_kafka_server:9092
+      - KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092
+      - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+
+  minio:
+    image: minio/minio:latest
+    container_name: aeolus_minio_server
+    command: server /data --console-address ":9001" # Habilita a interface web na porta 9001
+    environment:
+      - MINIO_ACCESS_KEY=minio
+      - MINIO_SECRET_KEY=minio123
+    ports:
+      - "9002:9000"   # S3 API
+      - "9001:9001"   # Console Web UI
+    volumes:
+      - minio-data:/data
+
 volumes:
   mongo-data:
+  clickhouse-data:
+  zookeeper-data:
+  minio-data:
+
