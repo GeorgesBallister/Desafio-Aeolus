@@ -1,7 +1,8 @@
 //* Importa as dependências
 import express from 'express';
 import dotenv from 'dotenv';
-import camerasRoutes from './routes/cameras.js';
+import camerasRoutes from '../src/routes/cameras.js';
+import eventsRouter from '../src/routes/events.js';
 
 //* Carregar as variaveis de ambiente do arquivo .env
 dotenv.config();
