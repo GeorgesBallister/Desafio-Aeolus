@@ -1,3 +1,5 @@
+name: desafio-aeolus # Nome do projeto
+
 services:
   # Banco de Dados MongoDB
   mongo:

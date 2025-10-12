@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
         });
         // 3.3 Retorna o codigo 200 (OK) + estrutura do registro no banco
         res.status(201).json(camera);        
-     // 4. Bloco de tratamento derro caso algo aconteça
+     // 4. Bloco de tratamento de erro caso algo aconteça
     } catch(error){
         // 4.1 Apenas retona o erro que aconteceu, codigo 400 (Bad Request) + Mensagem doque aconteceu
         res.status(400).json({ Erro: error.message })
@@ -45,7 +45,7 @@ router.get('/', async (req,res) => {
         });
         // 3. Retorna o codigo 200 (OK) + estrutura do registro no banco
         res.status(200).json(todasAsCameras);
-    // 4. Bloco de tratamento derro caso algo aconteça
+    // 4. Bloco de tratamento de erro caso algo aconteça
     } catch (error) {
         // 4.1 Apenas retona o erro que aconteceu, codigo 400 (Bad Request) + Mensagem doque aconteceu
         res.status(400).json({ Erro: error.message })
@@ -67,7 +67,7 @@ router.get('/:id', async (req,res) => {
     // 4. Se tudo ocorrer bem, retorna o codigo 200 (OK) + estrutura do registro no banco
     res.status(200).json(camera);
     
-    // 5. Bloco de tratamento derro caso algo aconteça
+    // 5. Bloco de tratamento de erro caso algo aconteça
     } catch (error) {
         // 5.1 Apenas retona o erro que aconteceu, codigo 400 (Bad Request) + Mensagem doque aconteceu
         res.status(400).json({ Erro: error.message })
@@ -91,7 +91,7 @@ router.put('/:id', async (req,res) => {
         }
         // 5. Retorna o codigo 200 (OK) + estrutura do registro no banco
         res.status(200).json(camera);
-        // 6. Bloco de tratamento derro caso algo aconteça
+        // 6. Bloco de tratamento de erro caso algo aconteça
         } catch (error) {
             // 6.1 Apenas retona o erro que aconteceu, codigo 400 (Bad Request) + Mensagem doque aconteceu
             res.status(400).json({ Erro: error.message })
@@ -108,7 +108,7 @@ router.delete('/:id', async (req,res) => {
         // 2. Retorna o codigo 204 (No Content) para informar que deu tudo certo, mas não tem conteudo para retornar por isso o end()
         res.status(204).end();
 
-      // 3. Bloco de tratamento derro caso algo aconteça
+      // 3. Bloco de tratamento de erro caso algo aconteça
     } catch (error) {
         // 3.1 Apenas retona o erro que aconteceu, codigo 400 (Bad Request) + Mensagem doque aconteceu
         res.status(400).json({ Erro: error.message })
