@@ -1,6 +1,7 @@
+# descomentar depois se necessário para garantir segurança mas como é só um desafio, não há necessidade
 node_modules
-.env
-.env.local
-.DS_Store
-dist
-/src/generated/prisma
+#.env
+#.env.local
+#.DS_Store
+#dist
+#/src/generated/prisma
