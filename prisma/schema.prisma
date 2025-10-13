@@ -7,7 +7,7 @@ datasource db {
   provider = "mongodb"
 
   // Pegando a informação do URL pelo arquivo .env
-  url      = env("DATABASE_URL")
+  url = env("DATABASE_URL")
 }
 
 // Schema - Camera

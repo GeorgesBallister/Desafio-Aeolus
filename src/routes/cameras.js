@@ -37,12 +37,14 @@ router.get('/', async (req,res) => {
     // 1. Puxei o metodo manipilador HTTP "GET" da função "Router" do express.
     // Try e catch para tratamento de erros
     try {
+        console.log('Antes do findMany');// Debug
         // 2. Criei uma constante com await para comportar o retorno do metodo findMany do prisma
         // FindMany = Busca todos os registros do banco
         const todasAsCameras = await prisma.camera.findMany({
             // Ordemar por data de criação, da mais nova para a mais antiga
             orderBy: {createdAt: 'desc'}
         });
+        console.log('Depois do findMany');// Debug
         // 3. Retorna o codigo 200 (OK) + estrutura do registro no banco
         res.status(200).json(todasAsCameras);
     // 4. Bloco de tratamento de erro caso algo aconteça
@@ -116,4 +118,4 @@ router.delete('/:id', async (req,res) => {
 })
 
 //* Export da Rota
-export default router;
+export default router; // Como aqui só tem uma rota, pode ser export default
