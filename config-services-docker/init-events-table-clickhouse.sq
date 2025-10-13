@@ -1,0 +1,9 @@
+CREATE TABLE events (
+  eventId String,
+  cameraID String,
+  timestamp DateTime,
+  confidence Float32,
+  image_path String,
+  payload String
+) ENGINE = MergeTree()
+ORDER BY eventId;

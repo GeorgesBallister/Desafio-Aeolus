@@ -71,13 +71,19 @@ async function runConsumer() {
                     image_path: key, // 4.2.5.5 Caminho da imagem no MinIO
                     payload: JSON.stringify(evento) // 4.2.5.6 Payload original do evento
                 };
-                // 4.2.6 Envia o evento para o ClickHouse via HTTP
+
+                const query = "INSERT INTO events FORMAT JSONEachRow";
+                const payload = JSON.stringify(clickhouseEvent) + '\n'; // Garante uma linha por evento
+
                 await axios.post(
-                    `${process.env.CLICKHOUSE_URL}/?query=INSERT%20INTO%20events%20FORMAT%20JSONEachRow`,// 4.2.6.1 URL do ClickHouse no .env + query de inserção de dados formatada para JSONEachRow
-                    JSON.stringify(clickhouseEvent), // 4.2.6.2 Payload do evento
-                    { headers: {  // 4.2.6.3 Cabeçalhos da requisição HTTP
-                        'Content-Type': 'application/json'
-                    } } );
+                    `${process.env.CLICKHOUSE_URL}/?query=${encodeURIComponent(query)}`,
+                    payload,
+                    {
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    }
+                );
                 // 4.2.7 Joga no console que a mensagem foi processada com sucesso
                 console.log('Mensagem processada:', evento.eventId);
 

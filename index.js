@@ -2,7 +2,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import camerasRouter from './src/routes/cameras.js';
-//import eventsRouter from './src/routes/events.js';
+import eventsRouter from './src/routes/events.js';
 
 //* Carregar as variaveis de ambiente do arquivo .env
 dotenv.config();
@@ -15,6 +15,7 @@ app.use(express.json());
 
 //* === Rotas ===
 app.use('/cameras', camerasRouter);
+app.use('/eventos', eventsRouter)
 
 // * Definir a porta do servidor
 const PORT = process.env.PORT || 3000;

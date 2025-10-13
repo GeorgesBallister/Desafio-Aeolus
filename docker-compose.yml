@@ -24,7 +24,7 @@ services:
       - CLICKHOUSE_PASSWORD=admin
     volumes:
       - clickhouse-data:/var/lib/clickhouse
-
+      - ./config-services-docker/init-events-table-clickhouse.sq:/docker-entrypoint-initdb.d/init-events-table.sql
   zookeeper:
     image: zookeeper:latest
     container_name: aeolus_zookeeper_server
@@ -32,14 +32,15 @@ services:
       - "2181:2181"
     
   kafka:
-    image: apache/kafka:latest
+    image: confluentinc/cp-kafka:3.3.1
     container_name: aeolus_kafka_server
     environment:
       - KAFKA_BROKER_ID=1
       - KAFKA_ZOOKEEPER_CONNECT=aeolus_zookeeper_server:2181
-      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://aeolus_kafka_server:9092
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
       - KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092
       - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1
+      - ALLOW_PLAINTEXT_LISTENER=yes
     depends_on:
       - zookeeper
     ports:
