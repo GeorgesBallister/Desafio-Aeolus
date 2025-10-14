@@ -1,6 +1,6 @@
 # Desafio Aeolus — Backend de Eventos (Kafka, MinIO, ClickHouse, MongoDB)
 
-<div style="text-align: center;"><img src="./Documentacao/ImagensReadMe/aeolus-logo.png" alt="Logo" style="display: inline-block;"></div>
+<div style="text-align: center;"><img src="./Documentacao/ImagensReadMe/aeolus-logo.png" alt="Logo" style="width: 400px; height: auto; display: block; margin: 0 auto;"></div>
 
 ![Node](https://img.shields.io/badge/Node-20.x-339933?logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-5-black?logo=express)
