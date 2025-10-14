@@ -10,7 +10,6 @@ services:
     volumes:
       - mongo-data:/data/db
       - ./config-services-docker/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js # Script para iniciar o rs.initiate()
-     # Inicia o MongoDB com replicação para permitir multidocumento
     command: ["--replSet", "rs0"] # somente isto não é suficiente, precisa do script acima, deve ter sido uma atualização recente da imagem
 
   clickhouse:

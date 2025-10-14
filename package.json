@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "index": "node index.js",
     "kafka": "node ./src/services/kafkaConsumer.js",
     "minio": "node ./src/services/createBucket.js",
-    "dev:all": "concurrently \"npm:minio\" \"npm:start\" \"npm:kafka\" "
-  },
+    "start": "concurrently \"npm:minio\" \"npm:index\" \"npm:kafka\" ",
+    "test": "cross-env NODE_ENV=test node --experimental-vm-modules ./node_modules/jest/bin/jest.js --runInBand",
+    "test:watch": "cross-env NODE_ENV=test node --experimental-vm-modules ./node_modules/jest/bin/jest.js --watch",
+    "test:e2e": "cross-env NODE_ENV=test node --experimental-vm-modules ./node_modules/jest/bin/jest.js --runInBand --testMatch=**/__tests__/e2e/**/*.test.js"
+  }, 
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -27,8 +30,11 @@
   },
   "devDependencies": {
     "concurrently": "^9.2.1",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.10",
-    "prisma": "^6.17.0"
+    "prisma": "^6.17.0",
+    "supertest": "^7.0.0"
   },
   "repository": {
     "type": "git",
