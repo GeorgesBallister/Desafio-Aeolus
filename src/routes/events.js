@@ -13,8 +13,8 @@ const s3 = new S3Client({
   endpoint: process.env.MINIO_ENDPOINT,
   region: 'us-east-1',
   credentials: {
-    accessKeyId: process.env.MINIO_ACCESS_KEY,
-    secretAccessKey: process.env.MINIO_SECRET_KEY
+    accessKeyId: process.env.MINIO_ROOT_USER,
+    secretAccessKey: process.env.MINIO_ROOT_PASSWORD
   },
   forcePathStyle: true
 });

@@ -49,15 +49,16 @@ services:
   minio:
     image: minio/minio:latest
     container_name: aeolus_minio_server
-    command: server /data --console-address ":9001" # Habilita a interface web na porta 9001
+    command: server /data --console-address ":9001"
     environment:
-      - MINIO_ACCESS_KEY=minio
-      - MINIO_SECRET_KEY=minio123
+      - MINIO_ROOT_USER=minio
+      - MINIO_ROOT_PASSWORD=minio123
     ports:
-      - "9002:9000"   # S3 API
-      - "9001:9001"   # Console Web UI
+      - "9002:9000"
+      - "9001:9001"
     volumes:
       - minio-data:/data
+
 
 volumes:
   mongo-data:

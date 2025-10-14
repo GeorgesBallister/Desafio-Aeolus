@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "kafka": "node ./src/services/kafkaConsumer.js",
+    "minio": "node ./src/services/createBucket.js",
+    "dev:all": "concurrently \"npm:minio\" \"npm:start\" \"npm:kafka\" "
   },
   "keywords": [],
   "author": "",
@@ -24,6 +26,7 @@
     "morgan": "^1.10.1"
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "nodemon": "^3.1.10",
     "prisma": "^6.17.0"
   },
