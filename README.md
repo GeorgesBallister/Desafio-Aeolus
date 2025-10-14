@@ -22,6 +22,7 @@ Este repositório implementa um serviço backend em **Node.js** para ingestão e
 
 O propósito é demonstrar integração entre sistemas distribuídos, boas práticas de design de APIs, uso de containers (Docker Compose) e uma suíte de testes automatizados (integração + E2E). Para entender o raciocínio por trás das decisões e os aprendizados, consulte o DevLog em `Documentacao/DevLog`.
 
+> ⚠️ Para uma melhor leitura da documentação e dos comentários no código, recomenda-se utilizar a extensão "[**Better Comments**](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)" no VS Code.
 ---
 
 ## 🏗️ Arquitetura (alto nível)
