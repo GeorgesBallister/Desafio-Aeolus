@@ -86,9 +86,9 @@ async function runConsumer() {
                     eventId: safeTimestamp, // usa timestamp como id simples
                     cameraID: safeDeviceId, // mapeia deviceId -> cameraID
                     timestamp: toClickhouseDateTime(safeTimestamp), // converte para CH
-                    confidence: evento.confidence, // 4.2.5.4 Nível de confiança
-                    image_path: key, // 4.2.5.5 Caminho da imagem no MinIO
-                    payload: JSON.stringify(evento) // 4.2.5.6 Payload original do evento
+                    confidence: typeof evento.confidence === 'number' ? evento.confidence : 0,
+                    image_path: key,
+                    payload: JSON.stringify(evento)
                 };
 
                 const query = "INSERT INTO events FORMAT JSONEachRow";
@@ -127,11 +127,28 @@ async function runConsumer() {
 //* Executa a função do consumidor e captura erros
 runConsumer().catch(console.error);
 
-// Converte ISO -> 'YYYY-MM-DD HH:MM:SS'
-function toClickhouseDateTime(isoString) {
+// Converte vários formatos para 'YYYY-MM-DD HH:MM:SS' (UTC) // ! alterei aqui, documentar
+function toClickhouseDateTime(input) {
     try {
-        return isoString.replace('T', ' ').replace('Z', '').split('.')[0];
+        let d;
+        if (typeof input === 'number') {
+            d = new Date(input > 1e12 ? input : input * 1000);
+        } else if (typeof input === 'string' && /^\d+$/.test(input)) {
+            const n = Number(input);
+            d = new Date(n > 1e12 ? n : n * 1000);
+        } else if (typeof input === 'string') {
+            d = new Date(input);
+        } else if (input instanceof Date) {
+            d = input;
+        } else {
+            d = new Date();
+        }
+        if (isNaN(d.getTime())) d = new Date();
+        const pad = (n) => String(n).padStart(2, '0');
+        return `${d.getUTCFullYear()}-${pad(d.getUTCMonth()+1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}:${pad(d.getUTCSeconds())}`;
     } catch {
-        return new Date().toISOString().replace('T', ' ').replace('Z', '').split('.')[0];
+        const d = new Date();
+        const pad = (n) => String(n).padStart(2, '0');
+        return `${d.getUTCFullYear()}-${pad(d.getUTCMonth()+1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}:${pad(d.getUTCSeconds())}`;
     }
 }
