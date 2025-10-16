@@ -6,6 +6,9 @@ import { PrismaClient } from '@prisma/client';
 const router = Router();
 const prisma = new PrismaClient();
 
+
+//* ============ Rotas de eventos ============
+
 // * Create = HTTP Post # Endpoint "/"
 // 1. Puxei o metodo manipilador HTTP "POST" da função "Router" do express.
 /* 2. Sua estrutura se cria da seguinte forma:
@@ -75,7 +78,6 @@ router.get('/:id', async (req,res) => {
         res.status(400).json({ Erro: error.message })
     }
 });
-
 
 //* Atualizar Registro = HTTP  Put
 router.put('/:id', async (req,res) => {

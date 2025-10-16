@@ -7,6 +7,7 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 
+//* ------------- Configurações iniciais -------------
 
 //* Configuração do Kafka
 const kafka = new Kafka({
@@ -35,26 +36,69 @@ const s3 = new S3Client({
 });
 
 
+//* ------------- Funções Auxiliares -------------
 
+
+//* 1. Função auxiliar para converter datas para o formato do ClickHouse
+function toClickhouseDateTime(input) {
+    // 1.1 Tenta converter o input para Date
+    try {
+        let d;
+        // 1.1.1 Se for número, pode ser epoch em ms ou s
+        if (typeof input === 'number') {
+            d = new Date(input > 1e12 ? input : input * 1000);
+        } else if (typeof input === 'string' && /^\d+$/.test(input)) {
+            // 1.1.2 Se for string numérica, converte para número
+            const n = Number(input);
+            d = new Date(n > 1e12 ? n : n * 1000);
+        } else if (typeof input === 'string') {
+            // 1.1.3 Se for string ISO
+            d = new Date(input);
+        } else if (input instanceof Date) {
+            d = input;
+        } else {
+            d = new Date();
+        }
+        // 1.1.4 Se não conseguir converter, usa data atual
+        if (isNaN(d.getTime())) d = new Date();
+        const pad = (n) => String(n).padStart(2, '0');
+        // 1.2 Formata para string no padrão ClickHouse
+        return `${d.getUTCFullYear()}-${pad(d.getUTCMonth()+1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}:${pad(d.getUTCSeconds())}`;
+    } catch {
+        // 1.3 Em caso de erro, retorna data atual formatada
+        const d = new Date();
+        const pad = (n) => String(n).padStart(2, '0');
+        return `${d.getUTCFullYear()}-${pad(d.getUTCMonth()+1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}:${pad(d.getUTCSeconds())}`;
+    }
+}
+
+
+//* ------------- Run -------------
 
 //* 1. Função principal do consumer Kafka
 async function runConsumer() {
-    // 1.1 Log inicial
-    console.log("Rodando o consumer");
-
-    // 1.2 Conecta o consumidor ao broker Kafka
+    
+    // 1.1 Conecta o consumidor ao broker Kafka
     await consumer.connect();
-
-    // 1.3 Inscreve o consumidor no tópico 'device-events' (apenas mensagens novas)
+    
+    // 1.2 Inscreve o consumidor no tópico 'device-events' (apenas mensagens novas)
     await consumer.subscribe({
         topic: 'device-events', // 1.3.1 Nome do tópico
         fromBeginning: false // 1.3.2 true = lê tudo desde o início
     });
 
+    // 1.3 Log inicial
+    console.log("Rodando o consumer");
+
+
     // 1.4 Inicia o loop de processamento de mensagens
     await consumer.run({
         // 1.4.1 Para cada mensagem recebida do Kafka:
-        eachMessage: async ({ topic, partition, message }) => {
+        eachMessage: async ({ 
+            topic, 
+            partition, 
+            message 
+        }) => {
             // 1.4.1.1 Log de recebimento
             console.log('Mensagem recebida do Kafka!');
             try {
@@ -67,7 +111,7 @@ async function runConsumer() {
                     cameraID: evento?.cameraID,
                     eventId: evento?.eventId,
                     timestamp: evento?.timestamp,
-                    hasImage: !!(evento?.image && evento?.image.base64)
+                    hasImage: !!(evento?.image && evento?.image.base64) 
                 });
 
                 // 1.4.4 Validação: só processa eventos de câmeras cadastradas no MongoDB
@@ -166,37 +210,3 @@ async function runConsumer() {
 
 //* Executa a função principal do consumer e captura erros
 runConsumer().catch(console.error);
-
-
-//* 1. Função auxiliar para converter datas para o formato do ClickHouse
-function toClickhouseDateTime(input) {
-    // 1.1 Tenta converter o input para Date
-    try {
-        let d;
-        // 1.1.1 Se for número, pode ser epoch em ms ou s
-        if (typeof input === 'number') {
-            d = new Date(input > 1e12 ? input : input * 1000);
-        } else if (typeof input === 'string' && /^\d+$/.test(input)) {
-            // 1.1.2 Se for string numérica, converte para número
-            const n = Number(input);
-            d = new Date(n > 1e12 ? n : n * 1000);
-        } else if (typeof input === 'string') {
-            // 1.1.3 Se for string ISO
-            d = new Date(input);
-        } else if (input instanceof Date) {
-            d = input;
-        } else {
-            d = new Date();
-        }
-        // 1.1.4 Se não conseguir converter, usa data atual
-        if (isNaN(d.getTime())) d = new Date();
-        const pad = (n) => String(n).padStart(2, '0');
-        // 1.2 Formata para string no padrão ClickHouse
-        return `${d.getUTCFullYear()}-${pad(d.getUTCMonth()+1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}:${pad(d.getUTCSeconds())}`;
-    } catch {
-        // 1.3 Em caso de erro, retorna data atual formatada
-        const d = new Date();
-        const pad = (n) => String(n).padStart(2, '0');
-        return `${d.getUTCFullYear()}-${pad(d.getUTCMonth()+1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}:${pad(d.getUTCSeconds())}`;
-    }
-}

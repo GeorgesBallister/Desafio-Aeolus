@@ -20,7 +20,9 @@ async function createBucketWithRetry(retries = 10, delay = 3000) {
     // 3. Tenta criar o bucket
     try {
       // 3.1 Comando para criar o bucket
-      await s3.send(new CreateBucketCommand({ Bucket: process.env.MINIO_BUCKET || 'events' }));
+      await s3.send(new CreateBucketCommand({
+        Bucket: process.env.MINIO_BUCKET || 'events' // Nome do bucket (padrão 'events')
+      }));
       // 3.2 Se conseguir, loga o sucesso e sai da função
       console.log('Bucket criado com sucesso!');
       // 3.3 Sai da função
