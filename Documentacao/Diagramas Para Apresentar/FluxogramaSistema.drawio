@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Vanaf956ToXkdfIuTYm2" name="Página-1">
-        <mxGraphModel dx="4613" dy="6689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="3344" dy="4922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -12,7 +12,7 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="231" style="edgeStyle=none;html=1;" parent="1" source="3" target="230" edge="1">
+                <mxCell id="231" style="edgeStyle=none;html=1;" parent="1" source="3" target="508" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="335" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=30;" parent="231" vertex="1" connectable="0">
@@ -20,7 +20,7 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="233" style="edgeStyle=none;html=1;" parent="1" source="3" target="232" edge="1">
+                <mxCell id="233" style="edgeStyle=none;html=1;" parent="1" source="3" target="505" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="334" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=30;" parent="233" vertex="1" connectable="0">
@@ -32,7 +32,7 @@
                     <mxGeometry x="240" y="-1010" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="238" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;APP BackEnd&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=90;" parent="1" vertex="1">
-                    <mxGeometry x="-2110" y="-750" width="4820" height="2910" as="geometry"/>
+                    <mxGeometry x="-2110" y="-750" width="4320" height="2910" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="" style="edgeStyle=none;html=1;" parent="238" source="4" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -43,7 +43,7 @@
                 <mxCell id="15" value="" style="edgeStyle=none;html=1;" parent="238" source="10" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="Disponibiliza as Rotas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);" parent="238" vertex="1">
+                <mxCell id="10" value="Disponibiliza as Rotas na rota:&lt;div&gt;3000&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);" parent="238" vertex="1">
                     <mxGeometry x="2310" y="538" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="31" value="" style="edgeStyle=none;html=1;" parent="238" source="12" target="30" edge="1">
@@ -75,9 +75,6 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="23" style="html=1;" parent="238" source="16" target="22" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="238" source="16" target="24" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
@@ -106,12 +103,6 @@
                 </mxCell>
                 <mxCell id="20" value="&lt;div&gt;&lt;b&gt;Get All&lt;/b&gt;&lt;/div&gt;&lt;b&gt;endpoint: &quot;/eventos/&quot;&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="238" vertex="1">
                     <mxGeometry x="1170" y="899" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="156" style="edgeStyle=none;html=1;" parent="238" source="22" target="155" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="22" value="&lt;div&gt;&lt;b&gt;Buscar Eventos de uma Camera Especifica&lt;/b&gt;&lt;/div&gt;&lt;p&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot; face=&quot;Helvetica&quot;&gt;&lt;b&gt;endpoint: &quot;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;/eventos/camera/:cameraID&lt;/span&gt;&quot;&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="238" vertex="1">
-                    <mxGeometry x="1780" y="1638" width="210" height="140" as="geometry"/>
                 </mxCell>
                 <mxCell id="167" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="238" source="24" target="168" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -186,7 +177,7 @@
                 <mxCell id="123" style="html=1;" parent="238" source="47" target="139" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="47" value="&lt;div&gt;&lt;b&gt;Buscar Camera pelo ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;endpoint:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&quot;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;/camera/:id&lt;/span&gt;&quot;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="238" vertex="1">
+                <mxCell id="47" value="&lt;div&gt;&lt;b&gt;Buscar Camera pelo ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;endpoint:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&quot;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;/cameras/:id&lt;/span&gt;&quot;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="238" vertex="1">
                     <mxGeometry x="2860" y="446" width="160" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="77" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="238" source="51" target="76" edge="1">
@@ -301,23 +292,14 @@
                 <mxCell id="91" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Log da Mensagem do Erro no terminal&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;HTTP Code: 404&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FF4949;rounded=1;strokeColor=#b85450;" parent="238" vertex="1">
                     <mxGeometry x="3684.5" y="1400" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="94" style="html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;strokeWidth=2;" parent="238" source="93" target="60" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="93" value="Registra camera no Mongo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="238" vertex="1">
                     <mxGeometry x="4050" y="882" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="100" style="html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;strokeWidth=2;" parent="238" source="95" target="60" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="95" value="Consulta todos os registros de cameras no Mongo" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;rounded=1;strokeColor=#82b366;" parent="238" vertex="1">
                     <mxGeometry x="3835" y="566" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="102" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Log da Mensagem do Erro no terminal&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;HTTP Code: 400&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FF4949;rounded=1;strokeColor=#b85450;" parent="238" vertex="1">
                     <mxGeometry x="3930" y="1420" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="107" style="html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;strokeWidth=2;" parent="238" source="105" target="60" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="105" value="Atualização do Registro no Mongo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="238" vertex="1">
                     <mxGeometry x="4060" y="1240" width="120" height="60" as="geometry"/>
@@ -359,9 +341,6 @@
                 <mxCell id="116" value="Tratamento&amp;nbsp;&lt;div&gt;de&amp;nbsp;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;Erro&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="238" vertex="1">
                     <mxGeometry x="3818" y="1571" width="116" height="116" as="geometry"/>
                 </mxCell>
-                <mxCell id="121" style="html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;strokeWidth=2;" parent="238" source="118" target="60" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="118" value="Deleta o Registro no Mongo" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;rounded=1;strokeColor=#82b366;" parent="238" vertex="1">
                     <mxGeometry x="4080" y="1599" width="120" height="60" as="geometry"/>
                 </mxCell>
@@ -394,9 +373,6 @@
                 <mxCell id="122" value="Tratamento&amp;nbsp;&lt;div&gt;de&amp;nbsp;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;Erro&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="238" vertex="1">
                     <mxGeometry x="3204" y="300" width="116" height="116" as="geometry"/>
                 </mxCell>
-                <mxCell id="135" style="html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;strokeWidth=2;" parent="238" source="127" target="60" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="127" value="Consulta o Registro no Mongo" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;rounded=1;strokeColor=#82b366;" parent="238" vertex="1">
                     <mxGeometry x="3830" y="328" width="120" height="60" as="geometry"/>
                 </mxCell>
@@ -405,9 +381,6 @@
                 </mxCell>
                 <mxCell id="130" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Log da Mensagem do Erro no terminal&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;HTTP Code: 400&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FF4949;rounded=1;strokeColor=#b85450;" parent="238" vertex="1">
                     <mxGeometry x="3335.5" y="200" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="60" value="Mongo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=20;fontStyle=1" parent="238" vertex="1">
-                    <mxGeometry x="4560" y="870" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="61" value="ClickHouse" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=20;fontStyle=1" parent="238" vertex="1">
                     <mxGeometry x="260" y="1578" width="120" height="60" as="geometry"/>
@@ -472,12 +445,6 @@
                 </mxCell>
                 <mxCell id="151" value="Exibe os Registros" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;rounded=1;strokeColor=#82b366;" parent="238" vertex="1">
                     <mxGeometry x="500" y="899" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="159" style="html=1;" parent="238" source="155" target="203" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="155" value="O &lt;b&gt;AXIOS s&lt;/b&gt;eleciona todos os registros da tabela `events`&amp;nbsp; que possuem o parametro :cameraID como valor" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="238" vertex="1">
-                    <mxGeometry x="1780" y="1806" width="190" height="110" as="geometry"/>
                 </mxCell>
                 <mxCell id="160" style="edgeStyle=none;html=1;" parent="238" source="158" target="149" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -587,13 +554,13 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="195" value="&lt;div&gt;&lt;b&gt;Retornar todos os eventos de uma camera&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;endpoint:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&quot;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;/eventos/camera/:cameraID&lt;/span&gt;&quot;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="238" vertex="1">
-                    <mxGeometry x="1420" y="1360" width="300" height="140" as="geometry"/>
+                    <mxGeometry x="1570" y="1399" width="300" height="140" as="geometry"/>
                 </mxCell>
                 <mxCell id="206" style="html=1;" parent="238" source="197" target="203" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="197" value="O &lt;b&gt;AXIOS &lt;/b&gt;faz uma query&lt;b&gt; SQL &lt;/b&gt;selecionando&amp;nbsp;todos os registros da tabela `events` que possuem o cameraID igual ao que foi passado como parametro" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="238" vertex="1">
-                    <mxGeometry x="1465" y="1720" width="230" height="172" as="geometry"/>
+                    <mxGeometry x="1600" y="1700" width="230" height="172" as="geometry"/>
                 </mxCell>
                 <mxCell id="199" value="" style="html=1;" parent="238" source="203" target="204" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -692,25 +659,19 @@
                     <mxGeometry x="-750" y="-1910" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="332" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;KAFKA CONSUMER&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=60;" parent="1" vertex="1">
-                    <mxGeometry x="650" y="-1740" width="3820" height="870" as="geometry"/>
+                    <mxGeometry x="635" y="-2000" width="3820" height="1140" as="geometry"/>
                 </mxCell>
                 <mxCell id="254" value="" style="edgeStyle=none;html=1;" parent="332" source="230" target="253" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="230" value="Liga o Consumer do Kafka" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);" parent="332" vertex="1">
-                    <mxGeometry x="130" y="360" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="257" style="edgeStyle=none;html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;" parent="332" source="253" target="255" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="390" y="560" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="259" value="" style="edgeStyle=none;html=1;" parent="332" source="253" target="260" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="253" value="Estabelece conexão com o Kafka" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="332" vertex="1">
                     <mxGeometry x="390" y="360" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="255" value="Kafka" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=20;fontStyle=1" parent="332" vertex="1">
-                    <mxGeometry x="390" y="120" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="265" style="edgeStyle=none;html=1;" parent="332" source="258" target="262" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -758,16 +719,13 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="275" value="Captura o valor do ID da camera recebida pelo evento, se o valor vinher vazio, ele coloca por padrão&lt;div&gt;&quot;unknown-device&quot;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="332" vertex="1">
-                    <mxGeometry x="1470" y="500" width="200" height="100" as="geometry"/>
+                    <mxGeometry x="1485" y="290" width="200" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="282" value="" style="edgeStyle=none;html=1;" parent="332" source="277" target="281" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="284" style="edgeStyle=none;html=1;dashed=1;dashPattern=12 12;endArrow=none;endFill=0;" parent="332" source="277" target="283" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="277" value="Busca a Camera via PRISMA pelo ID recebido atrelado ao evento" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="332" vertex="1">
-                    <mxGeometry x="1470" y="330" width="200" height="80" as="geometry"/>
+                    <mxGeometry x="1510" y="535" width="200" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="286" value="" style="edgeStyle=none;html=1;" parent="332" source="281" target="285" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -782,9 +740,6 @@
                 </mxCell>
                 <mxCell id="281" value="Valida se a Camera existe no Mongo" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="332" vertex="1">
                     <mxGeometry x="1780" y="300" width="140" height="140" as="geometry"/>
-                </mxCell>
-                <mxCell id="283" value="Mongo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=20;fontStyle=1" parent="332" vertex="1">
-                    <mxGeometry x="1510" y="90" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="285" value="Loga no console que o evento foi ignorado porque a camera não estava cadastrada + Seus valores recebidos" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;rounded=1;strokeColor=#b85450;" parent="332" vertex="1">
                     <mxGeometry x="1760" y="110" width="180" height="80" as="geometry"/>
@@ -831,6 +786,9 @@
                     <mxGeometry x="2147.5" y="480" width="175" height="140" as="geometry"/>
                 </mxCell>
                 <mxCell id="306" value="" style="edgeStyle=none;html=1;" parent="332" source="303" target="305" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="516" style="edgeStyle=none;html=1;dashed=1;dashPattern=12 12;endArrow=none;endFill=0;" parent="332" source="303" target="515" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="303" value="Envia a imagem para o MinIO via PutObjectCommand():&lt;div&gt;Bucket = Variavel do Sistema (events)&lt;/div&gt;&lt;div&gt;Key = Chave montada&lt;/div&gt;&lt;div&gt;Body = Buffer da Imagem&lt;/div&gt;&lt;div&gt;ContentType = imagem jpeg&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="332" vertex="1">
@@ -885,6 +843,9 @@
                 <mxCell id="325" style="edgeStyle=none;html=1;" parent="332" source="316" target="323" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="518" style="edgeStyle=none;html=1;dashed=1;dashPattern=12 12;endArrow=none;endFill=0;" parent="332" source="316" target="517" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="316" value="Executa Post no ClickHouse via AXIOS:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Query = SQL&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Payload = JSON&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Headers = Tipo do Conteudo JSON&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Auth = Nescessario para fazer o envio, informações setadas no Docker Compose&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="332" vertex="1">
                     <mxGeometry x="3326" y="245.75" width="238.5" height="203.5" as="geometry"/>
                 </mxCell>
@@ -922,14 +883,40 @@
                 <mxCell id="330" value="Loga no console, sucesso geral + ID do evento registrado" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;rounded=1;strokeColor=#82b366;" parent="332" vertex="1">
                     <mxGeometry x="3630" y="425" width="120" height="60" as="geometry"/>
                 </mxCell>
+                <mxCell id="510" value="" style="edgeStyle=none;html=1;" parent="332" source="508" target="509" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="508" value="Configura o objeto do kafka:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;ClientId = &#39;aeolus-app&#39;&lt;/li&gt;&lt;li&gt;brokers = .env.KAFKA_BROKER&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="332" vertex="1">
+                    <mxGeometry x="120" y="50" width="220" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="512" value="" style="edgeStyle=none;html=1;" parent="332" source="509" target="513" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230.36275695284166" y="566.75" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="509" value="Configura Consumer do Kafka:&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul style=&quot;padding-left: 0px;&quot;&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;groupId = &#39;aeolus-group&#39;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=center;" parent="332" vertex="1">
+                    <mxGeometry x="125" y="322.5" width="215" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="514" style="edgeStyle=none;html=1;" parent="332" source="513" target="230" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="513" value="Configura o Cliente S3:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;Endpoint: .env.MINIO_ENDPOINT =&amp;nbsp; localhost:9092&lt;/li&gt;&lt;li&gt;Region: &#39;&lt;b&gt;us-east-1&lt;/b&gt;&#39;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;Credencials.acesskeyId = .env.MINIO_ENDPOINT = &#39;&lt;b&gt;minio&lt;/b&gt;&#39;&lt;/li&gt;&lt;li&gt;Credencials.secretAcessKey = .env.MINIO_ROOT_PASSWORD = &#39;&lt;b&gt;minio123&lt;/b&gt;&#39;&lt;/li&gt;&lt;li&gt;ForcePath: &lt;b&gt;true &lt;/b&gt;(nescessrio para o minIO rodando localmente)&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="332" vertex="1">
+                    <mxGeometry x="80" y="670" width="300" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="515" value="MinIO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=20;fontStyle=1" parent="332" vertex="1">
+                    <mxGeometry x="2435" y="730" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="517" value="ClickHouse" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=20;fontStyle=1" parent="332" vertex="1">
+                    <mxGeometry x="3345" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
                 <mxCell id="333" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;Create Bucket&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=60;" parent="1" vertex="1">
-                    <mxGeometry x="-1400" y="-1530" width="1210" height="510" as="geometry"/>
+                    <mxGeometry x="-1400" y="-1530" width="1520" height="690" as="geometry"/>
                 </mxCell>
                 <mxCell id="232" value="Cria um Bucket no MinIO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);" parent="333" vertex="1">
-                    <mxGeometry x="1000" y="270" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="735" y="420" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="236" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Tentativas de Criação&lt;/h1&gt;&lt;p&gt;Esta função faz&amp;nbsp;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;10 tentativas de&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;criar o bucket no MinIO com o intervalo de 3 segundos cada&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="333" vertex="1">
-                    <mxGeometry x="980" y="100" width="180" height="120" as="geometry"/>
+                    <mxGeometry x="940" y="80" width="180" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="237" style="edgeStyle=none;html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;" parent="333" source="236" target="232" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -976,6 +963,12 @@
                 </mxCell>
                 <mxCell id="251" style="edgeStyle=none;html=1;" parent="333" source="244" target="250" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="507" style="edgeStyle=none;html=1;" parent="333" source="505" target="232" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="505" value="Configura o Cliente S3:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;Endpoint: .env.MINIO_ENDPOINT ou &#39;&lt;b&gt;localhost:9002&lt;/b&gt;&#39;&lt;/li&gt;&lt;li&gt;Region: &#39;us-east-1&#39;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;Credencials.acesskeyId = .env.MINIO_ENDPOINT ou &#39;minio&#39;&lt;/li&gt;&lt;li&gt;Credencials.secretAcessKey = .env.MINIO_ROOT_PASSWORD ou &#39;minio123&#39;&lt;/li&gt;&lt;li&gt;ForcePath: true (nescessrio para o minIO rodando localmente)&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="333" vertex="1">
+                    <mxGeometry x="970" y="345" width="300" height="240" as="geometry"/>
                 </mxCell>
                 <mxCell id="339" style="edgeStyle=none;html=1;" parent="1" source="337" target="338" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -1030,7 +1023,7 @@
                 <mxCell id="362" value="" style="edgeStyle=none;html=1;" parent="1" source="350" target="361" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="350" value="Disponibiliza as rotas" style="whiteSpace=wrap;html=1;rounded=1;align=center;" parent="1" vertex="1">
+                <mxCell id="350" value="Disponibiliza as rotas na porta:&lt;div&gt;3030&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="1607.5" y="-3810" width="105" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="355" value="" style="edgeStyle=none;html=1;" parent="1" source="352" target="354" edge="1">
@@ -1085,7 +1078,7 @@
                 </mxCell>
                 <mxCell id="384" value="" style="edgeStyle=none;html=1;" parent="1" source="369" target="385" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="2325" y="-3500" as="targetPoint"/>
+                        <mxPoint x="2420" y="-3560" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="389" style="edgeStyle=none;html=1;" parent="1" source="369" target="386" edge="1">
@@ -1098,62 +1091,108 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="369" value="HTTP&lt;div&gt;GET&#39;s&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="2125" y="-3530" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="2220" y="-3590" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="378" value="" style="edgeStyle=none;html=1;" parent="1" source="370" target="380" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="2270" y="-3760" as="targetPoint"/>
+                        <mxPoint x="2390" y="-3735" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="370" value="HTTP&lt;div&gt;POST&#39;s&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="2070" y="-3790" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="2190" y="-3765" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="382" style="edgeStyle=none;html=1;" parent="1" source="372" target="381" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="372" value="HTTP&lt;div&gt;DELETE&#39;s&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="2020" y="-3250" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="2115" y="-3310" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="380" value="&lt;div&gt;&lt;b&gt;Adciona um novo dispositivo&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;(&quot;camera&quot;)&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;para ser gerado&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;endpoint:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&quot;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;/api/devices/&lt;/span&gt;&quot;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="2280" y="-3820" width="160" height="120" as="geometry"/>
+                    <mxGeometry x="2480" y="-3810" width="160" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="381" value="&lt;div&gt;&lt;b&gt;Deleta um dispositivo (&quot;camera&quot;) pelo ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;endpoint:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&quot;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;/api/devices/:deviceId&lt;/span&gt;&quot;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="2040" y="-3130" width="160" height="120" as="geometry"/>
+                    <mxGeometry x="2135" y="-3190" width="160" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="393" value="" style="edgeStyle=none;html=1;" parent="1" source="385" target="392" edge="1">
+                <mxCell id="393" value="" style="edgeStyle=none;html=1;" parent="1" source="380" target="392" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="385" value="&lt;div&gt;&lt;b&gt;Lista todos os dispositivos&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;endpoint:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&quot;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;/api/devices/&lt;/span&gt;&quot;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="2430" y="-3610" width="160" height="120" as="geometry"/>
+                    <mxGeometry x="2515" y="-3610" width="160" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="386" value="&lt;div&gt;&lt;b&gt;Obtem Status de um dispositivo&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;endpoint:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&quot;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;/api/devices/:deviceId/status&lt;/span&gt;&quot;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="2430" y="-3440" width="230" height="120" as="geometry"/>
+                    <mxGeometry x="2535" y="-3450" width="230" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="387" value="&lt;div&gt;&lt;b&gt;Obtem informações do topico do Kafka&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;endpoint:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&quot;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;/api/kafka/topic-info&lt;/span&gt;&quot;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="2420" y="-3290" width="160" height="120" as="geometry"/>
+                    <mxGeometry x="2560" y="-3290" width="160" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="388" value="&lt;div&gt;&lt;b&gt;Health Check&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;endpoint:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&quot;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;/api/health/&lt;/span&gt;&quot;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="2370" y="-3120" width="160" height="120" as="geometry"/>
+                    <mxGeometry x="2385" y="-3190" width="160" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="395" value="" style="edgeStyle=none;html=1;" parent="1" source="392" target="394" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="392" value="Estrutura esperada:&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(220, 220, 220);&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(212, 212, 212);&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;&quot;deviceId&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(220, 220, 220);&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;color: rgb(212, 212, 212);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;&quot;Id da Camera&quot;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(220, 220, 220);&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;align=center;" parent="1" vertex="1">
-                    <mxGeometry x="2710" y="-3620" width="220" height="130" as="geometry"/>
+                    <mxGeometry x="2740" y="-3800" width="220" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="397" value="" style="edgeStyle=none;html=1;" parent="1" source="394" target="396" edge="1">
+                <mxCell id="412" value="" style="edgeStyle=none;html=1;" parent="1" source="402" target="411" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="394" value="Chama Controller addDevice()" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="3060" y="-3585" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="399" value="" style="edgeStyle=none;html=1;" parent="1" source="396" target="398" edge="1">
+                <mxCell id="428" value="" style="edgeStyle=none;html=1;" parent="1" source="424" target="427" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="396" value="Verifica se recebeu o campo &quot;deviceId&quot;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="3260" y="-3585" width="120" height="60" as="geometry"/>
+                <mxCell id="460" value="" style="edgeStyle=none;html=1;" parent="1" source="455" target="459" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="401" value="" style="edgeStyle=none;html=1;" parent="1" source="398" target="400" edge="1">
+                <mxCell id="461" value="SIM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="460" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0889" y="2" relative="1" as="geometry">
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="463" value="" style="edgeStyle=none;html=1;" parent="1" source="459" target="462" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="465" value="" style="edgeStyle=none;html=1;" parent="1" source="462" target="464" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="462" value="Adciona valor no SET devices usando o deviceId como parametro" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="4450" y="-2910" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="499" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;dashPattern=12 12;endArrow=none;endFill=0;strokeWidth=3;" parent="1" source="496" target="498" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="4250" y="-2050" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="5109" y="-2130"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="498" value="Kafka" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=20;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="1712.5" y="-2160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="503" style="edgeStyle=none;html=1;" parent="1" source="501" target="459" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="519" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;DeviceController&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;" parent="1" vertex="1">
+                    <mxGeometry x="3030" y="-3780" width="800" height="715" as="geometry"/>
+                </mxCell>
+                <mxCell id="394" value="Chama o deviceController&lt;div&gt;addDevice()&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="519" vertex="1">
+                    <mxGeometry x="120" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="396" value="Verifica se recebeu o campo &quot;deviceId&quot; no body da requisição" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="519" vertex="1">
+                    <mxGeometry x="120" y="190" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="397" value="" style="edgeStyle=none;html=1;" parent="519" source="394" target="396" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="398" value="Tratamento de Erros" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="519" vertex="1">
+                    <mxGeometry x="350" y="155" width="140" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="399" value="" style="edgeStyle=none;html=1;" parent="519" source="396" target="398" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="400" value="Loga erro no console" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;rounded=1;strokeColor=#b85450;" parent="519" vertex="1">
+                    <mxGeometry x="360" y="20" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="401" value="" style="edgeStyle=none;html=1;" parent="519" source="398" target="400" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="404" value="Não Recebeu&amp;nbsp;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;este campo,&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;ou o campo não é uma string,&amp;nbsp;&lt;/span&gt;&lt;div&gt;ou o campo é uma string vazia.&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="401" vertex="1" connectable="0">
@@ -1161,15 +1200,10 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="403" value="" style="edgeStyle=none;html=1;" parent="1" source="398" target="402" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="406" value="Loga erro no Console" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;rounded=1;strokeColor=#b85450;" parent="519" vertex="1">
+                    <mxGeometry x="590" y="120" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="405" value="Recebeu o Campo&amp;nbsp;&lt;div&gt;de forma correta&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="403" vertex="1" connectable="0">
-                    <mxGeometry x="-0.1536" y="1" relative="1" as="geometry">
-                        <mxPoint as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="407" value="" style="edgeStyle=none;html=1;" parent="1" source="398" target="406" edge="1">
+                <mxCell id="407" value="" style="edgeStyle=none;html=1;" parent="519" source="398" target="406" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="408" value="ERRO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="407" vertex="1" connectable="0">
@@ -1177,300 +1211,323 @@
                         <mxPoint y="1" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="398" value="Tratamento de Erros" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="3450" y="-3620" width="140" height="130" as="geometry"/>
+                <mxCell id="402" value="Cria um objeto chamado result e define seu valor como o resultado da função deviceService.addDevice com o valor do deviceID sem espaços em branco no inico ou fim" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="519" vertex="1">
+                    <mxGeometry x="510" y="360" width="220" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="400" value="Loga erro no console" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;rounded=1;strokeColor=#b85450;" parent="1" vertex="1">
-                    <mxGeometry x="3460" y="-3795" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="412" value="" style="edgeStyle=none;html=1;" parent="1" source="402" target="411" edge="1">
+                <mxCell id="403" value="" style="edgeStyle=none;html=1;" parent="519" source="398" target="402" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="402" value="Cria um objeto chamado result e define seu valor como o resultado da função deviceService.addDevice com o valor do deviceID sem espaços em branco no inico ou fim" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="3390" y="-3420" width="220" height="100" as="geometry"/>
-                </mxCell>
-                <mxCell id="406" value="Loga erro no Console" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;rounded=1;strokeColor=#b85450;" parent="1" vertex="1">
-                    <mxGeometry x="3705" y="-3680" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="432" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="411" target="431">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="411" value="Verifica se o deviceID já existe dentro Set devices" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="3830" y="-3350" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="416" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="413" target="415">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="413" value="Recebe a mensagem da thead secundaria&amp;nbsp; device-worker" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="4090" y="-2900" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="418" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="415" target="417">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="415" value="Pega a mensagem passada e utilzia de parametro para a função handleWorkerMessage()" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="3690" y="-3030" width="190" height="140" as="geometry"/>
-                </mxCell>
-                <mxCell id="420" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="417" target="419">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="417" value="Verifica qual o Type da Mensagem" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="3780" y="-2760" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="422" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="419" target="421">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="423" value="SE O type&amp;nbsp;&lt;div&gt;FOR DIFERENTE&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="422">
-                    <mxGeometry x="-0.297" y="1" relative="1" as="geometry">
+                <mxCell id="405" value="Recebeu o Campo&amp;nbsp;&lt;div&gt;de forma correta&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="403" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1536" y="1" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="425" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="419" target="424">
+                <mxCell id="427" value="Retrona uma mensagem de sucesso + o result em JSON&lt;div&gt;HTTP Code 201&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="519" vertex="1">
+                    <mxGeometry x="250" y="490" width="210" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="521" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;DeviceService (Thread Main)&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;" parent="1" vertex="1">
+                    <mxGeometry x="3860" y="-3790" width="800" height="1440" as="geometry"/>
+                </mxCell>
+                <mxCell id="411" value="Verifica se o deviceID já existe dentro Set devices" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="521" vertex="1">
+                    <mxGeometry x="90" y="60" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="433" value="Retorna erro dizendo que dispositivo já existe" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;rounded=1;strokeColor=#b85450;" parent="521" vertex="1">
+                    <mxGeometry x="190" y="180" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="431" value="deviceID" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="521" vertex="1">
+                    <mxGeometry x="280" y="50" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="432" value="" style="edgeStyle=none;html=1;" parent="521" source="411" target="431" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="426" value="SE O type FOR&lt;div&gt;&#39;event-sent&#39;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="425">
-                    <mxGeometry x="-0.0857" y="4" relative="1" as="geometry">
-                        <mxPoint as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="419" value="Verificando Type" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="3610" y="-2760" width="135" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="421" value="Executa outras mensagens" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="3617.5" y="-2530" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="428" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="424" target="427">
+                <mxCell id="434" value="" style="edgeStyle=none;html=1;" parent="521" source="431" target="433" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="424" value="Loga no console que o evento foi enviado pelo dispositivo + deviceID + timestamp&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="3320" y="-2900" width="150" height="130" as="geometry"/>
-                </mxCell>
-                <mxCell id="427" value="Retrona uma mensagem de sucesso + o result em JSON&lt;div&gt;HTTP Code 201&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-                    <mxGeometry x="3290" y="-3250" width="210" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="434" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="431" target="433">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="435" value="EXISTE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="434">
+                <mxCell id="435" value="EXISTE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="434" vertex="1" connectable="0">
                     <mxGeometry x="-0.0222" y="3" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="437" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="431" target="436">
+                <mxCell id="436" value="Manda uma mensagem para a Thead Secundaria (device-worker) passando:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;type: &#39;add-device&#39;,&lt;/li&gt;&lt;li&gt;deviceId&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="521" vertex="1">
+                    <mxGeometry x="575" y="25" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="437" value="" style="edgeStyle=none;html=1;" parent="521" source="431" target="436" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="438" value="NÃO&lt;div&gt;EXISTE&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="437">
+                <mxCell id="438" value="NÃO&lt;div&gt;EXISTE&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="437" vertex="1" connectable="0">
                     <mxGeometry x="-0.2889" y="-4" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="431" value="deviceID" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="4050" y="-3360" width="80" height="80" as="geometry"/>
+                <mxCell id="459" value="Retorna para&amp;nbsp; DeviceService" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="521" vertex="1">
+                    <mxGeometry x="600" y="1040" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="433" value="Retorna erro dizendo que dispositivo já existe" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;rounded=1;strokeColor=#b85450;" vertex="1" parent="1">
-                    <mxGeometry x="4030" y="-3510" width="120" height="60" as="geometry"/>
+                <mxCell id="464" value="Retorna uma mensagem dizendo que o dispositivo foi adcionado e o evento em loop iniciado + deviceId" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="521" vertex="1">
+                    <mxGeometry x="545" y="690" width="210" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="440" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="436" target="439">
+                <mxCell id="415" value="Pega a mensagem passada e utilzia de parametro para a função handleWorkerMessage()" style="whiteSpace=wrap;html=1;rounded=1;" parent="521" vertex="1">
+                    <mxGeometry x="290" y="590" width="190" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="417" value="Verifica qual o Type da Mensagem" style="whiteSpace=wrap;html=1;rounded=1;" parent="521" vertex="1">
+                    <mxGeometry x="310" y="790" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="418" value="" style="edgeStyle=none;html=1;" parent="521" source="415" target="417" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="436" value="Manda uma mensagem para a Thead Secundaria (device-worker) passando:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;type: &#39;add-device&#39;,&lt;/li&gt;&lt;li&gt;deviceId&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="4240" y="-3410" width="180" height="180" as="geometry"/>
+                <mxCell id="419" value="Verificando Type" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="521" vertex="1">
+                    <mxGeometry x="240" y="1020" width="135" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="444" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="439" target="443">
+                <mxCell id="420" value="" style="edgeStyle=none;html=1;" parent="521" source="417" target="419" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="439" value="Thead secundaria escuta a mensagem e extrai o type" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="4560" y="-3280" width="120" height="60" as="geometry"/>
+                <mxCell id="421" value="Executa outras mensagens" style="whiteSpace=wrap;html=1;rounded=1;" parent="521" vertex="1">
+                    <mxGeometry x="190" y="1250" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="446" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="443" target="445">
+                <mxCell id="422" value="" style="edgeStyle=none;html=1;" parent="521" source="419" target="421" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="447" value="SE O VALOR FOR DIFERENTE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="446">
+                <mxCell id="423" value="SE O type&amp;nbsp;&lt;div&gt;FOR DIFERENTE&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="422" vertex="1" connectable="0">
+                    <mxGeometry x="-0.297" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="424" value="Loga no console que o evento foi enviado pelo dispositivo + deviceID + timestamp&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;" parent="521" vertex="1">
+                    <mxGeometry x="90" y="790" width="150" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="425" value="" style="edgeStyle=none;html=1;" parent="521" source="419" target="424" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="426" value="SE O type FOR&lt;div&gt;&#39;event-sent&#39;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="425" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0857" y="4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="413" value="Recebe a mensagem da thead secundaria&amp;nbsp; device-worker" style="rounded=1;whiteSpace=wrap;html=1;" parent="521" vertex="1">
+                    <mxGeometry x="440" y="860" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="416" value="" style="edgeStyle=none;html=1;" parent="521" source="413" target="415" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="504" style="edgeStyle=none;html=1;" parent="521" source="464" target="413" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="554" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Device-Worker (Thread Secundaria)&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;" parent="1" vertex="1">
+                    <mxGeometry x="4680" y="-3790" width="1680" height="1770" as="geometry"/>
+                </mxCell>
+                <mxCell id="439" value="Thead secundaria escuta a mensagem e extrai o type" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="310" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="445" value="Executa outras funções" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;rounded=1;strokeColor=#b85450;" parent="554" vertex="1">
+                    <mxGeometry x="780" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="443" value="Valor&amp;nbsp;&lt;div&gt;do type&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="520" y="30" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="444" value="" style="edgeStyle=none;html=1;" parent="554" source="439" target="443" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="446" value="" style="edgeStyle=none;html=1;" parent="554" source="443" target="445" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="447" value="SE O VALOR&lt;div&gt;FOR DIFERENTE&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="446" vertex="1" connectable="0">
                     <mxGeometry x="-0.1556" y="-1" relative="1" as="geometry">
                         <mxPoint y="-1" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="449" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="443" target="448">
+                <mxCell id="448" value="Inicia a função startDeviceLoop, passando o deviceID da mensagem como parametro" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="480" y="315" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="449" value="" style="edgeStyle=none;html=1;" parent="554" source="443" target="448" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="450" value="SE O VALOR&lt;div&gt;FOR&lt;/div&gt;&lt;div&gt;&#39;add-device&#39;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="449">
+                <mxCell id="450" value="SE O VALOR&lt;div&gt;FOR&lt;/div&gt;&lt;div&gt;&#39;add-device&#39;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="449" vertex="1" connectable="0">
                     <mxGeometry x="-0.3742" y="1" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="443" value="Valor&amp;nbsp;&lt;div&gt;do type&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="4780" y="-3290" width="80" height="80" as="geometry"/>
+                <mxCell id="451" value="Verifica se o valor de deviceID já existe no MAP devices" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="710" y="345" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="445" value="Executa outras funções" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;rounded=1;strokeColor=#b85450;" vertex="1" parent="1">
-                    <mxGeometry x="4760" y="-3440" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="452" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="448" target="451">
+                <mxCell id="452" value="" style="edgeStyle=none;html=1;" parent="554" source="448" target="451" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="448" value="Inicia a função startDeviceLoop, passando o deviceID da mensagem como parametro" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="5030" y="-3260" width="170" height="120" as="geometry"/>
+                <mxCell id="455" value="valor do deviceID&lt;div&gt;existe no MAP devices?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="460" y="550" width="145" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="456" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="451" target="455">
+                <mxCell id="456" value="" style="edgeStyle=none;html=1;" parent="554" source="451" target="455" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="451" value="Verifica se o valor de deviceID já existe no SET devices" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="5270" y="-3190" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="458" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="455" target="457">
+                <mxCell id="558" value="" style="edgeStyle=none;html=1;" parent="554" source="556" target="557" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="466" value="NÃO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="458">
+                <mxCell id="556" value="Configurações do Modulo" style="rounded=1;whiteSpace=wrap;html=1;" parent="554" vertex="1">
+                    <mxGeometry x="120" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="560" value="" style="edgeStyle=none;html=1;" parent="554" source="557" target="559" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="557" value="Kafka" style="whiteSpace=wrap;html=1;rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="50" y="210" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="562" value="" style="edgeStyle=none;html=1;" parent="554" source="559" target="561" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="559" value="Producer" style="whiteSpace=wrap;html=1;rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="170" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="564" value="" style="edgeStyle=none;html=1;" parent="554" source="561" target="563" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="561" value="KafkaAdmin" style="whiteSpace=wrap;html=1;rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="40" y="360" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="563" value="MAP devices" style="whiteSpace=wrap;html=1;rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="180" y="435" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="457" value="Inicia uma função de loop assincrono" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="710" y="595" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="458" value="" style="edgeStyle=none;html=1;" parent="554" source="455" target="457" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="466" value="NÃO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="458" vertex="1" connectable="0">
                     <mxGeometry x="-0.2177" y="-4" relative="1" as="geometry">
                         <mxPoint y="-1" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="460" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="455" target="459">
+                <mxCell id="467" value="Chama a função emitFakeEvent e passa como parametro o deviceId" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="700" y="710" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="468" value="" style="edgeStyle=none;html=1;" parent="554" source="457" target="467" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="461" value="SIM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="460">
-                    <mxGeometry x="-0.0889" y="2" relative="1" as="geometry">
-                        <mxPoint x="1" as="offset"/>
-                    </mxGeometry>
+                <mxCell id="469" value="Verifica se&amp;nbsp; existe alguma conexão&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;existente&amp;nbsp;&lt;/span&gt;com o kafka" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="860" y="595" width="135" height="75" as="geometry"/>
                 </mxCell>
-                <mxCell id="455" value="valor do deviceID&lt;div&gt;existe no SET devices?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="5435" y="-3240" width="145" height="140" as="geometry"/>
-                </mxCell>
-                <mxCell id="468" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="457" target="467">
+                <mxCell id="470" value="" style="edgeStyle=none;html=1;" parent="554" source="467" target="469" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="457" value="Inicia uma função de loop assincrono" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="5560" y="-2990" width="120" height="60" as="geometry"/>
+                <mxCell id="473" value="Busca as informações existente nas variaveis do sistema:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;kafka.topic = .env.topic ou `device-events`&lt;/li&gt;&lt;li&gt;kafka.tetentionMS =&amp;nbsp; .env.KAFKA_RETENTION_MS ou 3600000&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="1030" y="330" width="330" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="463" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="459" target="462">
+                <mxCell id="476" value="Faz a conexão do PRODUCER do kafka" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="1480" y="375" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="478" value="Define o estado de conexão como verdadeiro" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="1480" y="515" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="480" value="Loga no console que o Kafka PRODUCER esta conectado + Retenção de tempo do topico" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="1450" y="630" width="180" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="471" value="Conexão com o Kafka" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="1150" y="587.5" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="477" value="" style="edgeStyle=none;html=1;" parent="554" source="473" target="476" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="459" value="Retorna para&amp;nbsp; DeviceService" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="4540" y="-2760" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="465" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="462" target="464">
+                <mxCell id="479" value="" style="edgeStyle=none;html=1;" parent="554" source="476" target="478" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="462" value="Adciona valor no SET devices usando o deviceId como parametro" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="4450" y="-2910" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="504" style="edgeStyle=none;html=1;" edge="1" parent="1" source="464" target="413">
+                <mxCell id="481" value="" style="edgeStyle=none;html=1;" parent="554" source="478" target="480" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="464" value="Retorna uma mensagem dizendo que o dispositivo foi adcionado e o evento em loop iniciado + deviceId" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="4300" y="-3040" width="210" height="90" as="geometry"/>
-                </mxCell>
-                <mxCell id="470" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="467" target="469">
+                <mxCell id="472" value="" style="edgeStyle=none;html=1;" parent="554" source="469" target="471" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="467" value="Chama a função emitFakeEvent e passa como parametro o deviceId" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="5550" y="-2860" width="130" height="70" as="geometry"/>
-                </mxCell>
-                <mxCell id="472" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="469" target="471">
+                <mxCell id="474" value="" style="edgeStyle=none;html=1;" parent="554" source="471" target="473" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="469" value="Verifica se&amp;nbsp; existe alguma conexão&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;existente&amp;nbsp;&lt;/span&gt;com o kafka" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="5750" y="-2810" width="135" height="75" as="geometry"/>
-                </mxCell>
-                <mxCell id="474" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="471" target="473">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="475" value="NÃO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="474">
+                <mxCell id="475" value="NÃO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="474" vertex="1" connectable="0">
                     <mxGeometry x="-0.3944" y="-1" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="484" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="471" target="483">
+                <mxCell id="482" style="edgeStyle=none;html=1;" parent="554" source="480" target="471" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="485" value="SIM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="484">
+                <mxCell id="483" value="Cria um objeto de Payload com o return da função generateEventPayload() passando o deviceId como parametro" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="1100" y="735" width="180" height="132.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="484" value="" style="edgeStyle=none;html=1;" parent="554" source="471" target="483" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="485" value="SIM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="484" vertex="1" connectable="0">
                     <mxGeometry x="-0.2167" y="-3" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="471" value="Conexão com o Kafka" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="5960" y="-2812.5" width="80" height="80" as="geometry"/>
+                <mxCell id="486" value="Gera um timestamp" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="1130" y="900" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="477" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="473" target="476">
+                <mxCell id="487" value="" style="edgeStyle=none;html=1;" parent="554" source="483" target="486" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="473" value="Busca as informações existente nas variaveis do sistema:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;kafka.topic = .env.topic ou `device-events`&lt;/li&gt;&lt;li&gt;kafka.tetentionMS =&amp;nbsp; .env.KAFKA_RETENTION_MS ou 3600000&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="5840" y="-3070" width="330" height="150" as="geometry"/>
+                <mxCell id="488" value="Gera uma imagem criada pelo imageGenerator.generateImage(), passando como parametro o deviceId" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="1090" y="1080" width="200" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="479" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="476" target="478">
+                <mxCell id="489" value="" style="edgeStyle=none;html=1;" parent="554" source="486" target="488" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="476" value="Faz a conexão do PRODUCER do kafka" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="6290" y="-3025" width="120" height="60" as="geometry"/>
+                <mxCell id="490" value="Verifica se o sistema esta guardando uma copia das imagens localmente atravez de um if" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="842.5" y="1090" width="170" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="481" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="478" target="480">
+                <mxCell id="491" value="" style="edgeStyle=none;html=1;" parent="554" source="488" target="490" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="478" value="Define o estado de conexão como verdadeiro" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="6290" y="-2885" width="120" height="60" as="geometry"/>
+                <mxCell id="492" value="Isso não vai alterar o fluxo do nosso sistema" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="554" vertex="1">
+                    <mxGeometry x="820" y="975" width="140" height="75" as="geometry"/>
                 </mxCell>
-                <mxCell id="482" style="edgeStyle=none;html=1;" edge="1" parent="1" source="480" target="471">
+                <mxCell id="493" style="edgeStyle=none;html=1;dashed=1;dashPattern=12 12;endArrow=none;endFill=0;" parent="554" source="490" target="492" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="480" value="Loga no console que o Kafka PRODUCER esta conectado + Retenção de tempo do topico" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="6260" y="-2770" width="180" height="105" as="geometry"/>
+                <mxCell id="494" value="Retorna para o Payload:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;deviceID&lt;/li&gt;&lt;li&gt;timestamp&lt;/li&gt;&lt;li&gt;value = um valor aleatorio decimal entre 0 e 1&lt;/li&gt;&lt;li&gt;tipo do evento = &#39;camera_capture&#39;&lt;/li&gt;&lt;li&gt;image = informações da imagem&lt;/li&gt;&lt;li&gt;device_text_crop&lt;/li&gt;&lt;li&gt;backgroun_colors&lt;/li&gt;&lt;li&gt;Metadados&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="790" y="1275" width="265" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="487" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="483" target="486">
+                <mxCell id="495" value="" style="edgeStyle=none;html=1;" parent="554" source="490" target="494" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="483" value="Cria um objeto de Payload com o return da função generateEventPayload() passando o deviceId como parametro" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="5915" y="-2650" width="180" height="132.5" as="geometry"/>
+                <mxCell id="501" value="Envia uma mensagem para a Thread Main (DeviceService):&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;type = &#39;event-sent&#39;&lt;/li&gt;&lt;li&gt;deviceId&amp;nbsp;&lt;/li&gt;&lt;li&gt;timestamp = Payload.timestamp&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="300" y="920" width="230" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="489" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="486" target="488">
+                <mxCell id="496" value="Envia o Payload para o Kafka atraves do PRODUCER:&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;topic&lt;/li&gt;&lt;li&gt;message&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;valores da mensagem&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;key = config.kafka.topic = .env.KAFKA_TOPIC ou &quot;device-events&quot;&lt;/li&gt;&lt;li&gt;value = Payload convertido em JSON&lt;/li&gt;&lt;li&gt;timestampo = tempo de agora&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="554" vertex="1">
+                    <mxGeometry x="282.5" y="1240" width="292.5" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="497" value="" style="edgeStyle=none;html=1;" parent="554" source="494" target="496" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="486" value="Gera um timestamp" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="6250" y="-2580" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="491" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="488" target="490">
+                <mxCell id="502" value="" style="edgeStyle=none;html=1;" parent="554" source="496" target="501" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="488" value="Gera uma imagem criada pelo imageGenerator.generateImage(), passando como parametro o deviceId" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="6430" y="-2590" width="200" height="100" as="geometry"/>
-                </mxCell>
-                <mxCell id="493" style="edgeStyle=none;html=1;dashed=1;dashPattern=12 12;endArrow=none;endFill=0;" edge="1" parent="1" source="490" target="492">
+                <mxCell id="440" value="" style="edgeStyle=none;html=1;" parent="1" source="436" target="439" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="495" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="490" target="494">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="490" value="Verifica se o sistema esta guardando uma copia das imagens localmente atravez de um if" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="6470" y="-2420" width="170" height="100" as="geometry"/>
-                </mxCell>
-                <mxCell id="492" value="Isso não vai alterar o fluxo do nosso sistema" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="6710" y="-2490" width="140" height="75" as="geometry"/>
-                </mxCell>
-                <mxCell id="497" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="494" target="496">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="494" value="Retorna para o Payload:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;deviceID&lt;/li&gt;&lt;li&gt;timestamp&lt;/li&gt;&lt;li&gt;value = um valor aleatorio decimal entre 0 e 1&lt;/li&gt;&lt;li&gt;tipo do evento = &#39;camera_capture&#39;&lt;/li&gt;&lt;li&gt;image = informações da imagem&lt;/li&gt;&lt;li&gt;device_text_crop&lt;/li&gt;&lt;li&gt;backgroun_colors&lt;/li&gt;&lt;li&gt;Metadados&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="5905" y="-2400" width="265" height="230" as="geometry"/>
-                </mxCell>
-                <mxCell id="499" style="edgeStyle=none;html=1;dashed=1;dashPattern=12 12;endArrow=none;endFill=0;strokeWidth=3;" edge="1" parent="1" source="496" target="498">
+                <mxCell id="257" style="edgeStyle=none;html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;strokeWidth=2;" parent="1" source="253" target="498" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="4250" y="-2050" as="targetPoint"/>
+                        <mxPoint x="1222.868852459017" y="-2190" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="502" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="496" target="501">
+                <mxCell id="60" value="Mongo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=20;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="2405" y="-700" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" style="html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;strokeWidth=2;" parent="1" source="93" target="60" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="496" value="Envia o Payload para o Kafka atraves do PRODUCER:&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;topic&lt;/li&gt;&lt;li&gt;message&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;valores da mensagem&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;key = config.kafka.topic = .env.KAFKA_TOPIC ou &quot;device-events&quot;&lt;/li&gt;&lt;li&gt;value = Payload convertido em JSON&lt;/li&gt;&lt;li&gt;timestampo = tempo de agora&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="4940" y="-2160" width="292.5" height="300" as="geometry"/>
-                </mxCell>
-                <mxCell id="500" style="edgeStyle=none;html=1;dashed=1;dashPattern=12 12;endArrow=none;endFill=0;" edge="1" parent="1" source="498" target="255">
+                <mxCell id="100" style="html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;strokeWidth=2;" parent="1" source="95" target="60" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="498" value="Kafka" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=20;fontStyle=1" vertex="1" parent="1">
-                    <mxGeometry x="1780" y="-2060" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="503" style="edgeStyle=none;html=1;" edge="1" parent="1" source="501" target="459">
+                <mxCell id="107" style="html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;strokeWidth=2;" parent="1" source="105" target="60" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="501" value="Envia uma mensagem para a Thread Main (DeviceService):&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;type = &#39;event-sent&#39;&lt;/li&gt;&lt;li&gt;deviceId&amp;nbsp;&lt;/li&gt;&lt;li&gt;timestamp = Payload.timestamp&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" vertex="1" parent="1">
-                    <mxGeometry x="4530" y="-2590" width="230" height="240" as="geometry"/>
+                <mxCell id="121" style="html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;strokeWidth=2;" parent="1" source="118" target="60" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" style="html=1;endArrow=none;endFill=0;dashed=1;dashPattern=12 12;strokeWidth=2;" parent="1" source="127" target="60" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="284" style="edgeStyle=none;html=1;dashed=1;dashPattern=12 12;endArrow=none;endFill=0;strokeWidth=2;" parent="1" source="277" target="60" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2294.5901639344265" y="-1150" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
