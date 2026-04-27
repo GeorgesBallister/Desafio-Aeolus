@@ -118,14 +118,17 @@ router.delete('/:eventId', async (req, res) => {
                     Bucket: process.env.MINIO_BUCKET,
                     Key: imagePath
                 }));
+                console.log(`[API] ✅ Imagem (${imagePath}) excluída com sucesso do MinIO para o evento ${eventId}.`);
             } catch (s3Error) {
-                console.warn(`[API] Imagem não encontrada no S3 para o evento ${eventId}:`, s3Error.message);
+                console.warn(`[API] ⚠️ Imagem não encontrada no S3 para o evento ${eventId}:`, s3Error.message);
             }
         }
 
         // 3. Apagar o evento do ClickHouse usando Mutation
         const deleteQuery = `ALTER TABLE events DELETE WHERE eventId = '${escapedId}'`;
         await clickhouseAxios.post(`/?query=${encodeURIComponent(deleteQuery)}`);
+        
+        console.log(`[API] ✅ Registro do evento ${eventId} excluído com sucesso do ClickHouse.`);
 
         // 4. Retornar sucesso
         res.status(200).json({ message: "Evento excluído com sucesso", eventId });
