@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Vanaf956ToXkdfIuTYm2" name="Página-1">
-        <mxGraphModel dx="3344" dy="4922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="3333" dy="4775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -901,7 +901,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="513" value="Configura o Cliente S3:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;Endpoint: .env.MINIO_ENDPOINT =&amp;nbsp; localhost:9092&lt;/li&gt;&lt;li&gt;Region: &#39;&lt;b&gt;us-east-1&lt;/b&gt;&#39;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;Credencials.acesskeyId = .env.MINIO_ENDPOINT = &#39;&lt;b&gt;minio&lt;/b&gt;&#39;&lt;/li&gt;&lt;li&gt;Credencials.secretAcessKey = .env.MINIO_ROOT_PASSWORD = &#39;&lt;b&gt;minio123&lt;/b&gt;&#39;&lt;/li&gt;&lt;li&gt;ForcePath: &lt;b&gt;true &lt;/b&gt;(nescessrio para o minIO rodando localmente)&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#EDEDED);rounded=1;" parent="332" vertex="1">
-                    <mxGeometry x="80" y="670" width="300" height="240" as="geometry"/>
+                    <mxGeometry x="80" y="710" width="300" height="240" as="geometry"/>
                 </mxCell>
                 <mxCell id="515" value="MinIO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=20;fontStyle=1" parent="332" vertex="1">
                     <mxGeometry x="2435" y="730" width="120" height="60" as="geometry"/>

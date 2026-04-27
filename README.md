@@ -149,7 +149,24 @@ API disponível em: <http://localhost:3000>
 
 ## 🐋 Rodando a aplicação em container (Dockerfile)
 
-> Por enquanto eu descartei porque eu teria que ter mais tempo para corrigir o problema de conexão quando app esta em container.
+Caso prefira rodar a API Node.js totalmente isolada via Docker (apenas para subir a imagem), você pode fazer o build e o run manual.
+
+1. **Faça o build da imagem:**
+```powershell
+docker build -t desafio-aeolus-api .
+```
+
+2. **Suba o container (conectado na rede da infraestrutura):**
+```powershell
+docker run -d -p 3000:3000 --name aeolus_api_server --network desafio-aeolus_default --env-file .env desafio-aeolus-api
+```
+
+> ⚠️ **Atenção (Importante):** Quando a API roda dentro do Docker, `localhost` passa a ser o próprio container. Portanto, no seu arquivo `.env`, você precisará alterar todas as ocorrências de `localhost` para o nome do container do respectivo serviço no compose. 
+> Exemplo: 
+> - `DATABASE_URL="mongodb://aeolus_mongo_server:27017/..."`
+> - `KAFKA_BROKER="aeolus_kafka_server:9095"`
+> - `CLICKHOUSE_URL="http://aeolus_clickhouse_server:8123"`
+> - `MINIO_ENDPOINT="http://aeolus_minio_server:9000"` (O MinIO interno roda na 9000).
 
 ---
 

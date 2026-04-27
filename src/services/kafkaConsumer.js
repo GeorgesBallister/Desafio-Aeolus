@@ -84,7 +84,7 @@ async function runConsumer() {
     // 1.2 Inscreve o consumidor no tópico 'device-events' (apenas mensagens novas)
     await consumer.subscribe({
         topic: 'device-events', // 1.3.1 Nome do tópico
-        fromBeginning: false // 1.3.2 true = lê tudo desde o início
+        fromBeginning: true // 1.3.2 true = lê tudo desde o início
     });
 
     // 1.3 Log inicial

@@ -10,7 +10,10 @@ dotenv.config();
 // Cria app
 const app = express();
 
+import cors from 'cors';
+
 // Middlewares
+app.use(cors());
 app.use(express.json());
 
 // Rotas

@@ -1,7 +1,7 @@
 //* ============ Dependências e Instâncias ============
 import { Router } from 'express'; 
 import axios from 'axios'; 
-import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
+import { S3Client, GetObjectCommand, DeleteObjectCommand } from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 
 //* Instancia o Router do Express
@@ -94,6 +94,42 @@ router.get('/:eventId/image-url', async (req, res) => {
         res.json({ url });
     } catch (error) {
         // 6.5 Em caso de erro, retorna status 400
+        res.status(400).json({ Erro: error.message });
+    }
+});
+
+//* DELETE /eventos/:eventId - Exclui o evento do MinIO e do ClickHouse
+router.delete('/:eventId', async (req, res) => {
+    try {
+        const { eventId } = req.params;
+        const escapedId = chEscape(eventId);
+
+        // 1. Buscar o evento para saber o path da imagem
+        const findQuery = `SELECT * FROM events WHERE eventId = '${escapedId}' FORMAT JSON`;
+        const response = await clickhouseAxios(`/?query=${encodeURIComponent(findQuery)}`);
+        const eventos = response.data.data;
+
+        if (eventos && eventos.length > 0) {
+            const imagePath = eventos[0].image_path;
+            
+            // 2. Apagar imagem do MinIO
+            try {
+                await s3.send(new DeleteObjectCommand({
+                    Bucket: process.env.MINIO_BUCKET,
+                    Key: imagePath
+                }));
+            } catch (s3Error) {
+                console.warn(`[API] Imagem não encontrada no S3 para o evento ${eventId}:`, s3Error.message);
+            }
+        }
+
+        // 3. Apagar o evento do ClickHouse usando Mutation
+        const deleteQuery = `ALTER TABLE events DELETE WHERE eventId = '${escapedId}'`;
+        await clickhouseAxios.post(`/?query=${encodeURIComponent(deleteQuery)}`);
+
+        // 4. Retornar sucesso
+        res.status(200).json({ message: "Evento excluído com sucesso", eventId });
+    } catch (error) {
         res.status(400).json({ Erro: error.message });
     }
 });
